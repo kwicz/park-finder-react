@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { useSelector } from 'react-redux';
 
 function ParkDetails(props){
+  console.log("Park details props: ", props)
   // const { selectedPark } = props;
   const selectedPark = useSelector(state => state.selectedPark)
   console.log("Park details selectedPark: ", selectedPark)
@@ -19,7 +20,7 @@ function ParkDetails(props){
 }
 
 ParkDetails.propTypes = {
-  parks: PropTypes.object,
+  selectedPark: PropTypes.object,
 };
 
 export default ParkDetails;

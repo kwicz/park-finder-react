@@ -17,25 +17,27 @@ class Parks extends React.Component {
     }
     
     render(){
-      console.log("WASSUP WITH THESE PROPS: ", this.props);
+      // console.log("WASSUP WITH THESE PROPS: ", this.props);
       const { parksAPICall, selectedPark } = this.props;
-      console.log("parksAPICall in Parks.js: ", parksAPICall);
-      console.log("selectedPark in Parks.js: ", selectedPark);
+      // console.log("parksAPICall in Parks.js: ", parksAPICall);
+      // console.log("selectedPark in Parks.js: ", selectedPark);
       const { parks, isLoading, error } = parksAPICall;
-      console.log("DESTRUCTURED ISLOADING: ", isLoading);
-      console.log("PARKS: ", parks);
+      // console.log("DESTRUCTURED ISLOADING: ", isLoading);
+      // console.log("PARKS: ", parks);
       if (error) {
         return <React.Fragment>Error: {error.message}</React.Fragment>;
       } else if (isLoading) {
         return <React.Fragment>Loading...</React.Fragment>;
       } else {
-        console.log(parks)
-        console.log(Object.values(parks))
+        // console.log(parks)
+        // console.log(Object.values(parks))
         const testArray = Object.values(parks);
         return (
           <React.Fragment>
             <ParkForm />
-            <ParkDetails />
+            <ParkDetails 
+              selectedPark={selectedPark} />
+
             {/* <h1>Park Results</h1>
              <ul>
               {testArray.map((park, index) =>              

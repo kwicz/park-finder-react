@@ -19,21 +19,22 @@ const useStyles = makeStyles((theme) => ({
 
 
 const ParkForm = props => {
-  console.log("PROPS IN FORM: ", props)
+
   const classes = useStyles();
   const parks = useSelector(state => state.parksAPICall.parks)
-  const parkList = parks.map((e) => <MenuItem value={e.parkId} key={e.parkId}>{e.name}</MenuItem>)
+  const parkList = parks.map((e) => <MenuItem value={e.parkId - 1} key={e.parkId - 1}>{e.name}</MenuItem>)
   const dispatch = useDispatch();
 
   const handleChange = (event) => {
     event.preventDefault();
     const parkSelectedId = event.target.value;
-    console.log("Park Selected Id: ", parkSelectedId)
-    const parkSelected = parkList[parkSelectedId]
+    const parkSelected = parks[parkSelectedId]
     console.log("park selected: ", parkSelected)
     const action = a.selectedPark(parkSelected)
     dispatch(action);
   };
+  const doesthisWork = useSelector(state => state.selectedPark);
+  console.log("Does this work?", doesthisWork)
   
   return(
     <div>
