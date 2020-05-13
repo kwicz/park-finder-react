@@ -1,0 +1,24 @@
+_Monday_
+README
+X Component Planning
+Decide on search parameters
+X Decide on display
+
+_Tuesday_
+X Add a form
+Data visualization
+
+
+_Wednesday_
+Finish selecting park item
+Add details
+Add visualization
+Deployment - ?
+
+
+Stretch: 
+* Compare 2 Parks
+  *Data visualization?
+* User can review a park?
+* useState hook
+* useEffect hook
