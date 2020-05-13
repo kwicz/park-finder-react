@@ -7,6 +7,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
+
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
@@ -29,15 +30,14 @@ const ParkForm = props => {
     event.preventDefault();
     const parkSelectedId = event.target.value;
     const parkSelected = parks[parkSelectedId]
-    console.log("park selected: ", parkSelected)
     const action = a.selectedPark(parkSelected)
     dispatch(action);
   };
   const doesthisWork = useSelector(state => state.selectedPark);
-  console.log("Does this work?", doesthisWork)
   
   return(
     <div>
+
       <FormControl className={classes.formControl}>
         <InputLabel id="park-dropdown-label">Choose a Park</InputLabel>
         <Select
