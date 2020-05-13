@@ -1,36 +1,36 @@
-# Happy Report
+# Park Finder
 
-## Last Updated: 11 May 2020
+By: Katy Wicz, Matt Taylor, Benjamin Thom, & Zakk Short
 
-## A wonderful application made by: Katy, Matt, Ben, & Zakk
+May 11th - 13th, 2020
 
-### Description
-_Web Application that shows different quality of life indexes based off of user input of city._
+## Description
+_Web React web application that allows users to access data about the United States National Parks utilizing an ASP.NET Core Web API_
 
-## Wireframe
+## Preview
+[Wireframe]()
 
-[img]
+## User Stories
+* A user should be able to search for a park
+* A user should be able to see API call results for that park (_name, location, area, description_)
+* Utilizing data visualization, a user should be able to see a bar graph displaying _name (x)_ and _area (y)_ for that park 
 
-### User Stories
-* A user should be able to search for a city
-* A user should be able to see API call results for that city
-* When a search doesn't return a result...
-
-### Technology
+## Technology
 * Git
 * JavaScript
 * Jest
 * React
 * Redux
-* [Teleport API](https://developers.teleport.org/)
-
-### License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-Copyright &copy; 2020 **_Katy, Matt, Ben, Zakk_** 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* C#
+* .NET Core 2.2
+* ASP.NET Core MVC
+* MySQL 2.2.0
+* MySQL Workbench 8.0
+* EF Core 2.2.0
+* Razor 2.2.0
+* Swashbuckle 5.0.0
+* [Badlands Photography by Andreas Eckert](https://www.doi.gov/blog/10-things-you-didnt-know-about-badlands-national-park)
+* National Parks CSV from [Download Excel Files](https://www.downloadexcelfiles.com/us_en/download-excel-file-list-national-parks-us#.Xrx0exNKhTY)
 
 ## Available Scripts
 
@@ -98,3 +98,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+Copyright &copy; 2020 **_Katy Wicz, Matt Taylor, Benjamin Thom, & Zakk Short_** 

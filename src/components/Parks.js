@@ -6,9 +6,7 @@ import ParkData from './ParkData';
 import Container from '@material-ui/core/Container';
 
 class Parks extends React.Component {
-    constructor(props) {
-      super(props);
-    }
+
 
     componentDidMount() {
       const { dispatch } = this.props;
@@ -18,13 +16,12 @@ class Parks extends React.Component {
     
     render(){
       const { parksAPICall, selectedPark } = this.props;
-      const { parks, isLoading, error } = parksAPICall;
+      const { isLoading, error } = parksAPICall;
       if (error) {
         return <React.Fragment>Error: {error.message}</React.Fragment>;
       } else if (isLoading) {
         return <React.Fragment>Loading...</React.Fragment>;
       } else {
-        const testArray = Object.values(parks);
         return (
           <React.Fragment>
             <Container>

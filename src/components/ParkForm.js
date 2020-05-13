@@ -11,7 +11,7 @@ import Select from '@material-ui/core/Select';
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 120,
+    minWidth: 300,
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -33,7 +33,6 @@ const ParkForm = props => {
     const action = a.selectedPark(parkSelected)
     dispatch(action);
   };
-  const doesthisWork = useSelector(state => state.selectedPark);
   
   return(
     <div>
